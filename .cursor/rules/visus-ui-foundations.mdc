@@ -1,0 +1,145 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Visus UI Foundations Outline
+
+This document outlines the foundational guidelines for `visus-ui`, a React component library emphasizing scalability, accessibility (a11y), and a modern design system. These guidelines—color, layout, typography, elevation, and motion—ensure consistency, usability, and alignment with our techy yet approachable brand and a11y leadership goals.
+
+---
+
+## Color Guidelines
+
+### Palette
+- **Primary (Blue)**: `#1d4ed8` (light), `#3b82f6` (dark) - Main actions.  
+- **Secondary (Gray)**: `#64748b` (light), `#94a3b8` (dark) - Subtle accents.  
+- **Background**: `#ffffff` (light), `#1f2937` (dark) - Canvas.  
+- **Text**: `#111827` (light), `#f3f4f6` (dark) - High-contrast text.  
+- **Disabled**: `#d1d5db` (light), `#4b5563` (dark) - Inactive states.  
+- **Action**: `#2563eb` (light), `#60a5fa` (dark) - Hover/active.  
+- **Error**: `#dc2626` (light), `#f87171` (dark) - Validation errors.  
+- **Success**: `#15803d` (light), `#22c55e` (dark) - Confirmations.  
+
+### Contrast
+- Minimum 4.5:1 (AA) for text/background; some aim for 7:1 (AAA).  
+
+### Usage
+- **Use**: Primary for Buttons, Text for body, Error for feedback.  
+- **Keep in Mind**: 4.5:1 contrast, dark mode support, semantic roles.  
+- **Don’t**: Use low-contrast pairs, rely on color alone, overuse Primary.  
+
+### Statement
+*"Visus UI’s colors ensure accessibility (4.5:1+), semantics (disabled, actions), and dark mode adaptability—prioritize a11y and consistency."*
+
+---
+
+## Layout Guidelines
+
+### Units
+- Base: 4px increments (4, 8, 12, 16, 20, 24, 32, 40, 48, 64).  
+
+### Grid
+- **Mobile (<640px)**: 4 columns, 16px gutters/margins.  
+- **Tablet (640px-1023px)**: 8 columns, 24px gutters/margins.  
+- **Desktop (1024px+)**: 12 columns, 32px gutters/margins, max-width 1280px.  
+
+### Breakpoints
+- Mobile: <640px.  
+- Tablet: 640px-1023px.  
+- Desktop: 1024px+.  
+
+### Spacing
+- Scale: 4px (tiny gaps), 8px (small), 16px (standard), 24px+ (sections).  
+- Rhythm: 1.5 line height, 4px-based vertical spacing.  
+
+### Usage
+- **Use**: 12-column grid for desktop, 16px padding for components.  
+- **Keep in Mind**: A11y touch targets (48px), 4-point scale, scannability.  
+- **Don’t**: Use odd units, skip gutters, overcrowd mobile.  
+
+### Statement
+*"Visus UI’s layout uses a 4-point unit system and a responsive 12-column grid with adaptive spacing—ensure rhythm and scannability."*
+
+---
+
+## Typography Guidelines
+
+### Scale
+- **xs**: 12px - Captions.  
+- **sm**: 14px - Secondary text.  
+- **base**: 16px - Body.  
+- **lg**: 20px - Subheadings.  
+- **xl**: 24px - Headings.  
+- **2xl**: 30px - Titles (desktop).  
+- **3xl**: 36px - Hero (desktop).  
+- Responsive: Reduce on mobile, increase on desktop.  
+
+### Grid Relation
+- Sizes: Multiples of 4 (12, 16, 20, 24).  
+- Leading: 1.5 (body), 1.4 (headings).  
+
+### Readability
+- Tracking: 0 (body), -0.02em (headings).  
+- Line Length: 50-75 chars (500-700px).  
+
+### Performance
+- Font: System stack (e.g., `-apple-system`, `Roboto`, `Arial`).  
+
+### Usage
+- **Use**: `base` for body, `xl` for headings with medium/semibold weight.  
+- **Keep in Mind**: 4.5:1 contrast, grid alignment, system fonts.  
+- **Don’t**: Use off-scale sizes, tight leading on small text, skip fallbacks.  
+
+### Statement
+*"Visus UI’s typography scales responsively (12px-36px), aligns with the 4-point grid, optimizes readability, and uses system fonts—keep it legible and fast."*
+
+---
+
+## Elevation Guidelines
+
+### Shadows (Light Mode)
+- **0**: None - Base surface.  
+- **1**: Subtle - Low (e.g., Cards).  
+- **2**: Moderate - Medium (e.g., hover).  
+- **3**: Strong - High (e.g., Modals).  
+
+### Background Colors
+- **0**: White (light), dark gray (dark) - Base.  
+- **1**: White (light), light gray (dark) - Low.  
+- **2**: White (light), mid-gray (dark) - Medium.  
+- **3**: White (light), lighter gray (dark) - High.  
+
+### Z-Index
+- 0 (base), 10 (low), 20 (medium), 30 (high), 40 (overlays), 50 (topmost).  
+
+### Usage
+- **Use**: Level 1 for Cards, Level 3 for Modals with matching z-index.  
+- **Keep in Mind**: A11y cues, dark mode color shifts, consistent levels.  
+- **Don’t**: Use shadows in dark mode, mix z-index, overuse Level 3.  
+
+### Statement
+*"Visus UI’s elevation uses 4 levels (0-3) with shadows in light mode, colors in dark mode, and a z-index scale—clarify hierarchy with a11y in mind."*
+
+---
+
+## Motion Guidelines
+
+### Easing
+- **Standard**: Ease-in-out - General transitions (e.g., Modal fade).  
+- **Accelerated**: Ease-out - Exiting (e.g., Tooltip fade).  
+- **Decelerated**: Ease-in - Entering (e.g., Button hover).  
+
+### Duration
+- 100ms (hover), 200ms (fast), 300ms (standard), 500ms (slow).  
+
+### Accessibility
+- **Reduced Motion**: Limit to 100ms opacity or remove entirely.  
+
+### Usage
+- **Use**: 300ms standard for Modals, 100ms decelerated for Button hover.  
+- **Keep in Mind**: A11y fallbacks, purposeful motion, defined values.  
+- **Don’t**: Use long durations (1000ms), skip reduced motion, over-animate.  
+
+### Statement
+*"Visus UI’s motion uses three easing functions and 100ms-500ms durations to enhance UX, with reduced motion fallbacks—guide users, don’t distract."*

@@ -1,1 +1,50 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #3b82f6;
+  --color-secondary: #64748b;
+  --color-secondary-dark: #94a3b8;
+  --color-background: #ffffff;
+  --color-background-dark: #1f2937;
+  --color-text: #111827;
+  --color-text-dark: #f3f4f6;
+  --color-disabled: #d1d5db;
+  --color-disabled-dark: #4b5563;
+  --color-action: #2563eb;
+  --color-action-dark: #60a5fa;
+  --color-error: #dc2626;
+  --color-error-dark: #f87171;
+  
+  --color-success: #15803d;
+  --color-success-dark: #22c55e;
+
+  --color-elevation-0: #ffffff;
+  --color-elevation-0-dark: #1f2937;
+  
+  --color-elevation-1: #ffffff;
+  --color-elevation-1-dark: #374151;
+  
+  --color-elevation-2: #ffffff;
+  --color-elevation-2-dark: #4b5563;
+  
+  --color-elevation-3: #ffffff;
+  --color-elevation-3-dark: #6b7280;
+
+  --duration-fast: 100ms;
+  --duration-standard: 200ms;
+  --duration-medium: 300ms;
+  --duration-slow: 500ms;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-accelerated: cubic-bezier(0, 0, 0.2, 1);
+  --ease-decelerated: cubic-bezier(0.4, 0, 1, 1);
+
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-low: 10;
+  --z-medium: 20;
+  --z-high: 30;
+  --z-overlay: 40;
+  --z-top: 50;
+

@@ -1,0 +1,223 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+# Visus UI Brand and Guidelines
+
+This document outlines the brand identity and guidelines for `visus-ui`, a React component library focused on scalability, accessibility (a11y), and a modern tech stack (React, TypeScript, Tailwind CSS). It’s designed to guide development, design, and communication, ensuring consistency and alignment with our mission to lead in accessibility.
+
+---
+
+## Brand Identity
+
+### Vision (Why We Exist)
+*"To empower developers with a clear, accessible, and scalable UI toolkit that brings vision to every interface."*
+- **Purpose**: Empower developers with intuitive, inclusive tools.
+- **A11y Leadership**: Accessibility is core to "vision"—we aim to set the standard.
+
+### Core Values (What We Stand For)
+1. **Clarity**: Intuitive components and APIs for seamless use.
+2. **Inclusivity**: Accessibility for all, no exceptions.
+3. **Adaptability**: Scales from small projects to enterprise apps.
+4. **Craftsmanship**: High-quality, precise code and UX.
+5. **Community**: Openness to feedback and collaboration.
+
+### Final Brand Statement
+*"Visus UI empowers developers with a clear, accessible, and scalable toolkit that brings vision to every interface. Rooted in clarity, inclusivity, adaptability, craftsmanship, and community, we’re crafting the gold standard for accessible UI—tech-driven yet approachable, so every developer can build for every user."*
+
+### Tone and Vibe
+- **Techy yet Approachable**: Precise and developer-friendly, yet warm and encouraging.
+- **Examples**: "High-contrast themes? Yep, we’ve got that—because a11y rocks."
+
+---
+
+## Design Principles
+
+### Philosophy
+These principles guide our philosophical approach to design, ensuring consistency and supporting everyday decisions.
+
+1. **Accessibility is Foundational**
+   - Inclusive design starts day one—WCAG 2.1 AA minimum.
+   - *Example*: Test Buttons with screen readers before release.
+
+2. **Simplicity Drives Clarity**
+   - Minimal APIs, sensible defaults—no complexity overload.
+   - *Example*: `variant="primary"` over nested configs.
+
+3. **Flexibility Fuels Scale**
+   - Customizable yet cohesive components.
+   - *Example*: Allow `className` overrides on Modals.
+
+4. **Consistency Breeds Trust**
+   - Uniform naming, styling, and a11y practices.
+   - *Example*: Same focus ring (`focus:ring-2`) everywhere.
+
+5. **Human-Centric Design Matters**
+   - Natural, delightful UX and DX.
+   - *Example*: Smooth hover states on Buttons.
+
+6. **Progress Over Perfection**
+   - Iterate with community feedback—start solid, then grow.
+   - *Example*: Ship Checkbox v1, refine later.
+
+### Statement
+*"At Visus UI, we design with purpose: Accessibility is foundational to every choice, simplicity drives clarity for all, and flexibility fuels scale for any project. Consistency breeds trust in our craft, human-centric design ensures delight, and progress over perfection keeps us moving forward with our community."*
+
+---
+
+## Tone of Voice
+
+### Core Tone
+- **Techy yet Approachable**: Precise yet friendly—sharp for pros, warm for all.
+
+### Characteristics
+1. **Clear and Concise**: Straightforward, digestible language.
+   - *Example*: "Use `variant='primary'`—simple as that."
+2. **Supportive and Empowering**: Encouraging, opportunity-focused.
+   - *Example*: "New to a11y? Button’s got you covered."
+3. **Knowledgeable but Relatable**: Expert yet peer-to-peer.
+   - *Example*: "ARIA makes Modals shine—and you will too."
+4. **Inclusive and Purposeful**: Accessibility as a shared mission.
+   - *Example*: "Build for everyone—Modal traps focus."
+5. **Enthusiastic yet Grounded**: Excited but real—no hype.
+   - *Example*: "High-contrast themes—because a11y rocks."
+
+### Statement
+*"Visus UI speaks with a techy yet approachable voice—clear and concise to cut through noise, supportive and empowering to lift devs up, knowledgeable but relatable to feel like a teammate, inclusive and purposeful to champion accessibility, and enthusiastic yet grounded to keep it real."*
+
+---
+
+## Terminology
+
+### Core Terms
+- **Visus UI**: Full library name, always capitalized.
+- **Component**: Reusable UI block (e.g., Button).
+- **Props**: Properties for configuration (e.g., `size='lg'`).
+- **Theme**: Style collection (e.g., high-contrast).
+- **A11y**: Accessibility shorthand.
+
+### Component Terms
+- **Variant**: Style option (e.g., `primary`).
+- **Size**: Scale option (e.g., `md`).
+- **Disabled**: Inactive state with `aria-disabled`.
+- **Label**: Descriptive text (e.g., "Email").
+- **Error**: Feedback with `aria-describedby`.
+- **Focus**: Active state for keyboard/screen readers.
+
+### A11y Terms
+- **High-Contrast**: 4.5:1+ contrast ratio.
+- **Screen Reader-Friendly**: Compatible with assistive tech.
+- **Keyboard Navigation**: Tab, Enter, Space support.
+- **ARIA**: Accessibility attributes (e.g., `aria-label`).
+
+### Tone Phrases
+- **"Built for Everyone"**: Inclusivity tagline.
+- **"Vision in Action"**: Purpose in use.
+- **"We’ve Got Your Back"**: Supportive reassurance.
+- **"Simple, Scalable, Accessible"**: Core promise.
+- **"Let’s Build Together"**: Community call.
+
+---
+
+## Accessibility Guidelines
+
+### Approach
+- **Philosophy**: A11y is foundational—usable by all from the start.
+- **Goal**: WCAG 2.1 AA minimum, AAA where possible, a11y leader.
+
+### Guidelines
+1. **General**
+   - Use semantic HTML (e.g., `<button>`).
+   - Ensure keyboard navigation (Tab, Enter, Escape).
+   - Apply ARIA minimally (e.g., `aria-label`).
+   - Test with axe-core, keyboard, VoiceOver, NVDA.
+
+2. **Color**
+   - Maintain 4.5:1 contrast (e.g., `bg-primary text-white`).
+   - Avoid color-only cues—pair with icons or ARIA.
+   - Support dark mode (`dark:bg-gray-800`).
+
+3. **Hierarchy**
+   - Guide with size/spacing (e.g., `text-xl` for titles).
+   - Match DOM and visual order.
+   - Use proper headings (e.g., `<h2>` in Modals).
+
+4. **Assistive Technologies**
+   - Ensure screen reader compatibility (e.g., `aria-checked`).
+   - Manage focus (e.g., trap in Modals).
+   - Provide clear errors (e.g., `aria-describedby`).
+
+### Statement
+*"Visus UI builds accessibility into every component—meeting WCAG 2.1 AA and aiming higher. We use high-contrast colors, clear hierarchy, and screen reader-friendly design with ARIA and focus management to lead in inclusive UI."*
+
+---
+
+## Writing Guidelines
+
+### Approach
+- **Philosophy**: Writing guides design—clear, consistent, action-driven.
+- **Goal**: A techy yet approachable house style.
+
+### Guidelines
+1. **Grammar**
+   - Use active voice (e.g., "Set `variant='primary'`").
+   - Keep sentences short (15-20 words).
+   - Use contractions (e.g., "We’ve got you").
+   - Limit exclamation points.
+
+2. **Style**
+   - Stick to terminology (e.g., "props," "a11y").
+   - Format code with backticks (e.g., `size='lg'`).
+   - Use sentence case (e.g., "Keyboard navigation").
+   - Explain jargon simply (e.g., "ARIA helps screen readers").
+
+3. **Action-Oriented**
+   - Start with verbs (e.g., "Add `error='Required'`").
+   - Frame positively (e.g., "Trap focus for a11y").
+   - Tie to benefits (e.g., "Link labels—screen readers love it").
+
+### Statement
+*"Visus UI’s writing is watertight—clear, consistent, and action-driven with active voice, short sentences, and a techy yet approachable style. It guides devs with grammar, unifies with style, and empowers with language."*
+
+---
+
+## Microcopy Guidelines
+
+### Approach
+- **Philosophy**: Microcopy is the component voice—short, purposeful, human.
+- **Goal**: Clear, a11y-first text fitting React/web norms.
+
+### Guidelines
+1. **General**
+   - Keep it brief (1-5 words).
+   - Use verbs (e.g., "Save").
+   - Ensure clarity (e.g., "Close").
+   - Be consistent (e.g., "Required").
+
+2. **Component-Specific**
+   - **Labels**: Noun/phrase (e.g., "Email").
+   - **Placeholders**: Hints (e.g., "example@domain.com").
+   - **Errors**: Problem + fix (e.g., "Enter a valid email").
+   - **Buttons**: Verb/noun (e.g., "Submit").
+   - **Tooltips**: Brief value (e.g., "Toggle dark mode").
+   - **Modal Titles**: Descriptive (e.g., "Confirm deletion").
+
+3. **A11y**
+   - Write for screen readers (e.g., "Email, required").
+   - Use hidden text (`sr-only`, e.g., "Close dialog").
+   - Announce states (e.g., "Checked").
+
+4. **Tone**
+   - Techy yet approachable (e.g., "Pick a size").
+   - Supportive (e.g., "Add a name—we need it!").
+
+### Statement
+*"Visus UI’s microcopy is short, sharp, and built for everyone—guiding with clear, action-oriented text that fits React conventions. Labels name, errors fix, and Buttons act, all screen reader-friendly and supportive."*
+
+---
